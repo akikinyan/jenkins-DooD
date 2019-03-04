@@ -18,7 +18,7 @@ RUN apt-get update \
     && apt-get install -y docker-ce \
     && usermod -aG docker jenkins
 
-RUN curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+RUN curl -L https://github.com/docker/compose/releases/download/1.23.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 RUN chmod +x /usr/local/bin/docker-compose
 
 USER jenkins
